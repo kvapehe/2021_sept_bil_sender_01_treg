@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="U$(YCdaH!Fc$^Hsn_%h8" x="0" y="0"><statement name="HANDLER"><block type="radio_set_group" id="9TK-]D6fp;Y)we0%0)i3"><value name="ID"><shadow type="math_number_minmax" id="KPi.3K5yq5sgbfZ{=w=r"><mutation min="0" max="255" label="Id" precision="0"/><field name="SLIDER">150</field></shadow></value></block></statement></block><block type="device_forever" id="=lLKmQ9u^w)/~,=Y:9`h" x="288" y="-6"><statement name="HANDLER"><block type="controls_if" id="#aRgFGq}F_a4{$K{NiY-"><mutation elseif="3" else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="ze:jnGK7xUd6RhH1KiZy"><field name="OP">LT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_get_rotation" id="^Qy^16H~%7~}SZLUY`U)"><field name="NAME">Rotation.Pitch</field></block></value><value name="B"><shadow type="math_number" id="S^g5#oH;uC}ge6gmhU|v"><field name="NUM">-5</field></shadow></value></block></value><statement name="DO0"><block type="radio_datagram_send" id="(I6,_L|/zD$n,$GS*$@#"><value name="value"><shadow type="math_number" id="a^vn/kA{j8r{MH8o+}+9"><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="J]o,]EA@Q}^W3zf+)_5@"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . . # . . 
+        . . # . .
+        `</field></block></next></block></statement><value name="IF1"><block type="logic_compare" id=")abgHQ1E|k(~?.eSN]=p"><field name="OP">LT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_get_rotation" id=":eFZH{??F(!_SdHAG+GV"><field name="NAME">Rotation.Roll</field></block></value><value name="B"><shadow type="math_number" id="/8Jw?Lldb6rXsTN9J-,m"><field name="NUM">-5</field></shadow></value></block></value><statement name="DO1"><block type="radio_datagram_send" id="0)Gj#,e-+P%vEUWFYyvB"><value name="value"><shadow type="math_number" id="g:FiBr#:4zxBO:U=/na8"><field name="NUM">2</field></shadow></value><next><block type="device_show_leds" id="iB.WRrA3}]hDO7xDg2AB"><field name="LEDS">`
+        . . # . . 
+        . # . . . 
+        # # # # # 
+        . # . . . 
+        . . # . .
+        `</field></block></next></block></statement><value name="IF2"><block type="logic_compare" id="/Fgrmvv14TvIyCbK~d:V"><field name="OP">GT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_get_rotation" id="tY0Gf@ywJ.[E13uGJA#I"><field name="NAME">Rotation.Roll</field></block></value><value name="B"><shadow type="math_number" id="=/xinSVu5Dnb=+zvT.:-"><field name="NUM">5</field></shadow></value></block></value><statement name="DO2"><block type="radio_datagram_send" id="eQwNel!75sXT+VcuwfWz"><value name="value"><shadow type="math_number" id="o{g=1,FW.VA`}iZeD/yZ"><field name="NUM">3</field></shadow></value><next><block type="device_show_leds" id="tWzXVwutQvGrQ*]8DIJQ"><field name="LEDS">`
+        . . # . . 
+        . . . # . 
+        # # # # # 
+        . . . # . 
+        . . # . .
+        `</field></block></next></block></statement><value name="IF3"><block type="logic_compare" id="vg#.CR{1L.zOs7q@hL8G"><field name="OP">GT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_get_rotation" id="w67?g+,lz-KEhEsgkA)/"><field name="NAME">Rotation.Pitch</field></block></value><value name="B"><shadow type="math_number" id="Ndc7[?}o?8FdGLizzw1-"><field name="NUM">5</field></shadow></value></block></value><statement name="DO3"><block type="radio_datagram_send" id="2S=,d.pr~hv8SOd1:3_X"><value name="value"><shadow type="math_number" id="[?peD11wa_LHdgCs(`+X"><field name="NUM">4</field></shadow></value><next><block type="device_show_leds" id="+o[=Gs.oK++}gsGR@arE"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        # . # . # 
+        . # # # . 
+        . . # . .
+        `</field></block></next></block></statement><statement name="ELSE"><block type="radio_datagram_send" id=":Zw;rw8Sd-tCaP0!DwN%"><value name="value"><shadow type="math_number" id="01*#*3TZ!agq465|^%bp"><field name="NUM">5</field></shadow></value><next><block type="device_clear_display" id="I`?flyBwU2@}=#MUBY:,"/></next></block></statement></block></statement></block><block type="device_get_rotation" id="olKMqL.sho^B{*_.Xe0*" disabled="true" x="610" y="266"><field name="NAME">Rotation.Pitch</field></block></xml>
